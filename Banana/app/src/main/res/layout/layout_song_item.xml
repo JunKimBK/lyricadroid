@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:longClickable="true">
+
+    <TextView
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Track Title"
+        android:id="@+id/song_item_tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Artist"
+        android:id="@+id/song_item_tv_artist"
+        android:layout_below="@+id/song_item_tv_title"
+        android:layout_alignLeft="@+id/song_item_tv_title"
+        android:layout_alignStart="@+id/song_item_tv_title"
+        android:textColor="#cccccc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Duration"
+        android:id="@+id/song_item_tv_duration"
+        android:layout_below="@+id/song_item_tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#cccccc" />
+
+</RelativeLayout>

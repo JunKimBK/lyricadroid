@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_menu_playlist"
+        android:title="playlist"
+        android:icon="@drawable/ic_playlist"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/main_menu_song"
+        android:title="song"
+        android:icon="@drawable/ic_song"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/main_menu_lyric"
+        android:title="lyric"
+        android:icon="@drawable/ic_lyric"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/main_menu_hot"
+        android:title="Hot playlist"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_menu_account"
+        android:title="Account"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_menu_about"
+        android:title="About"
+        app:showAsAction="never" />
+</menu>

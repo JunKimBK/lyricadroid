@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="@dimen/hot_item_width"
+        android:layout_height="@dimen/hot_item_width">
+
+        <LinearLayout
+            android:background="@drawable/hot_playlist_item_border"
+            android:layout_width="@dimen/hot_item_width"
+            android:layout_height="@dimen/hot_item_width" />
+
+        <TextView
+            android:id="@+id/hot_item_tv_number"
+            android:layout_width="@dimen/hot_item_width"
+            android:layout_height="@dimen/hot_item_width"
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hot_item_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:text="Song name - singer" />
+
+        <TextView
+            android:id="@+id/hot_item_tv_downloaded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+            android:text="0 downloaded" />
+    </LinearLayout>
+</LinearLayout>

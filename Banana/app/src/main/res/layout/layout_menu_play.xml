@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/background_dark">
+
+        <ImageView
+            android:id="@+id/imageViewPlay"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pause_lyrics" />
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/imageViewNext"
+            android:layout_toLeftOf="@+id/imageViewPlay"
+            android:layout_toStartOf="@+id/imageViewPlay"
+            android:src="@drawable/back_lyrics" />
+
+        <ImageView
+            android:id="@+id/imageViewNext"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/imageViewPlay"
+            android:layout_toRightOf="@+id/imageViewPlay"
+            android:src="@drawable/next_lyrics" />
+
+        <ImageView
+            android:id="@+id/imageViewRandom"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/imageViewBack"
+            android:layout_toLeftOf="@+id/imageViewBack"
+            android:layout_toStartOf="@+id/imageViewBack"
+            android:src="@drawable/random_lyrics" />
+
+        <SeekBar
+            android:id="@+id/seekBarPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:indeterminate="false" />
+
+
+        <ImageView
+            android:id="@+id/imageViewRepeat"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/imageViewNext"
+            android:layout_toEndOf="@+id/imageViewNext"
+            android:layout_toRightOf="@+id/imageViewNext"
+            android:src="@drawable/repeat_all_lyrics" />
+
+        <TextView
+            android:id="@+id/textViewProcessed"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarPlaying"
+            android:layout_alignLeft="@+id/imageViewRandom"
+            android:layout_alignStart="@+id/imageViewRandom" />
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageViewPlay"
+            android:layout_alignEnd="@+id/imageViewRepeat"
+            android:layout_alignRight="@+id/imageViewRepeat" />
+
+    </RelativeLayout>
+</LinearLayout>

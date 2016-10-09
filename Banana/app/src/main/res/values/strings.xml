@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Banana</string>
+    <string name="playlist_addnew">Add new playlist...</string>
+    <string name="song_menu_add_to_playlist">Add to playlist</string>
+    <string name="hint_lyric_content">Lyric content here!</string>
+    <string name="about_banana">Banana is a system include a server provide lyric for users all over the world and an music player in android to display lyric from Banana server.\nNot only that, Banana create a favorite lyric community all over the world where you are free to contribute and edit every lyric, everything are free!</string>
+</resources>
